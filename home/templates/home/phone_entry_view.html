@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Verification</title>
+</head>
+<body>
+    <h2>Enter Your Phone Number</h2>
+    <form method="post">
+        {% csrf_token %}
+
+        <!-- Phone Number Input -->
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" value="{{ form.phone.value }}" required>
+        {% if form.phone.errors %}
+            <div style="color: red;">
+                {{ form.phone.errors }}
+            </div>
+        {% endif %}
+
+        <!-- CAPTCHA Field -->
+        <div>
+            {% if form.captcha.errors %}
+                <p style="color: red;">{{ form.captcha.errors }}</p>
+            {% endif %}
+            {{ form.captcha }}
+        </div>
+
+        <button type="submit">Send SMS Code</button>
+    </form>
+</body>
+</html>
