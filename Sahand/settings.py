@@ -197,15 +197,14 @@ CORS_ALLOW_CREDENTIALS = True
 # Allowed origins
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'http://panel.nfscom.ir:3000',
-    'https://panel.nfscom.ir:3000',
     'https://localhost:3000',
-    'http://admin.nfscom.ir',
-    'https://admin.nfscom.ir',
-    'https://newpanel.sh-varna.ir',
+    'https://sahandpanel.sh-varna.ir',
+    'http://sahandpanel.sh-varna.ir',
+    'https://sahand.sh-varna.ir',
+    'http://sahand.sh-varna.ir',
     'http://127.0.0.1:8000',
-    "https://apiv2.sh-varna.ir",
-    "http://apiv2.sh-varna.ir",
+    "https://sahandapi.sh-varna.ir",
+    "http://sahandapi.sh-varna.ir",
 ]
 
 # Allowed methods
