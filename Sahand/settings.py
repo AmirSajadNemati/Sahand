@@ -205,6 +205,9 @@ CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:8000',
     "https://sahandapi.sh-varna.ir",
     "http://sahandapi.sh-varna.ir",
+    "https://api.hosseinhemmati.com/",
+    "http://api.hosseinhemmati.com/"
+
 ]
 
 # Allowed methods

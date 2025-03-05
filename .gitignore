@@ -54,3 +54,4 @@ staticfiles/
 .bat
 chat/templates/chat/lobby.html
 lobby.html
+home/templates/home/login.html
