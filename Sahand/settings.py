@@ -209,7 +209,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://api.hosseinhemmati.com/"
 
 ]
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://sahandapi.sh-varna.ir/",
+    "http://sahandapi.sh-varna.ir/"
+]
 # Allowed methods
 CORS_ALLOW_METHODS = [
     'GET',
